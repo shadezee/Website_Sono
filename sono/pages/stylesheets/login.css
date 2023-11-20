@@ -68,7 +68,6 @@ header ul li a:hover {
 header.sticky .logo,
 header.sticky ul li a {
   z-index: 9999;
-
   color: #856a13;
 }
 header.sticky ul li a:hover {
@@ -123,7 +122,7 @@ header.sticky ul li a:hover {
   padding-bottom: 9px;
 }
 label {
-  font-family: 'Gabriela', serif;
+  font-family: "Gabriela", serif;
   color: rgb(255, 255, 255);
   font-size: 2.3em;
   justify-content: center;
@@ -134,7 +133,7 @@ label {
   transition: 0.5s ease-in-out;
 }
 input {
-  font-family: 'Noto Sans Mono', monospace;
+  font-family: "Noto Sans Mono", monospace;
   width: 60%;
   height: 20px;
   background: #1f1f1f;
@@ -151,7 +150,7 @@ input {
   border: none;
 }
 #country-options {
-  font-family: 'Noto Sans Mono', monospace;
+  font-family: "Noto Sans Mono", monospace;
   background: none;
   color: #ffffff;
   padding-left: 20px;
@@ -196,7 +195,7 @@ button:hover {
   transition: 0.8s ease-in-out;
 }
 .login label {
-  color: #000000;
+  color: #ffffff;
   transform: scale(0.6);
 }
 .login button {
@@ -205,7 +204,7 @@ button:hover {
 
 #chk:checked ~ .login {
   box-shadow: rgb(57, 57, 57);
-  transform: translateY(-500px);
+  transform: translateY(-580px);
 }
 #chk:checked ~ .login label {
   transform: scale(1);

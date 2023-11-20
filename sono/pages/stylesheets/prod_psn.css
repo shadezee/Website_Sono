@@ -1,5 +1,6 @@
 body {
-  background: url(../../media/pics/product_psn/psncoverbllrd.png) repeat fixed 100%;
+  background: url(../../media/pics/product_psn/psncoverbllrd.png) repeat fixed
+    100%;
   overflow: hidden;
   background-color: #aec6a5;
   overflow-y: scroll;
@@ -31,7 +32,6 @@ header a {
   text-decoration: none;
   color: inherit;
 }
-
 header.sticky {
   transition: 0.6s;
   z-index: 4;
@@ -134,7 +134,8 @@ header.sticky ul li a:hover {
 }
 
 .pix {
-  background: url(../../media/pics/product_psn/psncover.png) fixed no-repeat 100%;
+  background: url(../../media/pics/product_psn/psncover.png) fixed no-repeat
+    100%;
   background-size: cover;
   backdrop-filter: blur(44px);
   grid-area: pix;
@@ -143,7 +144,8 @@ header.sticky ul li a:hover {
 /* PARENT GRID END */
 /* CONTENT */
 .extra-container1 {
-  background: url(../../media/pics/product_psn/psncover.png) fixed no-repeat 100%;
+  background: url(../../media/pics/product_psn/psncover.png) fixed no-repeat
+    100%;
   background-size: cover;
   backdrop-filter: blur(44px);
 }

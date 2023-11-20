@@ -211,6 +211,9 @@ header.sticky ul li a:hover {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.card a {
+  text-decoration: none;
+}
 .card:hover {
   transition: 0.9s;
   height: max-content;

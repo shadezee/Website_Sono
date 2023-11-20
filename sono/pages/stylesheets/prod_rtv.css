@@ -85,6 +85,7 @@ header.sticky ul li a:hover {
 /* PARENT GRID */
 .major-container {
   display: grid;
+  position: relative;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 0.5fr 1.5fr 1.4fr 0.6fr 1.4fr 0.6fr 1fr;
   gap: 0px 0px;
@@ -321,7 +322,8 @@ header.sticky ul li a:hover {
   /*BOX THINGS END*/
 }
 .warn-text:hover {
-  color: rgb(252, 223, 0);
+  color: rgb(255, 255, 255);
+  background-color: rgba(87, 87, 87, 0.646);
 }
 
 /* ALBUM DESC */
