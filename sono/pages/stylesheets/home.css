@@ -1,0 +1,94 @@
+body {
+  user-select: none;
+  -ms-overflow-style: none;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 0.7fr 1.6fr 0.7fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  justify-content: center;
+  place-items: center;
+  justify-items: center;
+  align-self: center;
+  grid-template-areas:
+    "logo logo logo"
+    "side1 buttons side2"
+    "space space space";
+}
+.container video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-size: cover;
+  min-width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  filter: blur(3px);
+}
+.logo {
+  padding-top: 40px;
+  grid-area: logo;
+  font-family: "Comforter Brush", cursive;
+  position: relative;
+  z-index: 2;
+  font-size: 228px;
+  top: 10px;
+  bottom: 10px;
+  font-kerning: -5;
+  color: rgb(232, 224, 224);
+  text-shadow: 5px 5px rgb(90, 187, 216);
+}
+.buttons {
+  grid-area: buttons;
+  justify-self: center;
+  align-content: center;
+  padding-top: 0px;
+}
+.space {
+  position: relative;
+  justify-self: center;
+  grid-area: space;
+}
+.side1 {
+  grid-area: side1;
+}
+.side2 {
+  grid-area: side2;
+}
+.login {
+  width: 180px;
+  padding-top: 00;
+  position: relative;
+  height: 60px;
+  font-size: 36px;
+  font-family: Syne Mono, monospace;
+  cursor: pointer;
+  background: transparent;
+  color: black;
+  outline: none;
+  border: none;
+  transition: 1s ease-in-out;
+  z-index: 3;
+}
+.login:hover {
+  transition: 1s ease-in-out;
+  background: #7e883a;
+}
+.login:hover svg {
+  stroke-dashoffset: -480;
+}
+.login span {
+  color: white;
+  font-size: 36px;
+  font-weight: 100;
+}
+.login a {
+  color: black;
+  text-decoration: none;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link <link rel="stylesheet" href="./stylesheets/login.css" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gabriela&family=Noto+Sans+Mono:wght@200&family=Belgrano&family=Faustina&family=Asul:wght@400;700&family=Eczar&family=Exo:wght@500&family=Graduate&family=Josefin+Slab:ital,wght@1,600&family=Livvic:wght@600&family=Meddon&family=Neuton&family=Oldenburg&family=Prata&family=Sacramento&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <a href="./home.html" class="logo">Sono</a>
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
+  </header>
+
+  <div class="major-container">
+    <div class="form-section">
+      <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true" />
+
+        <div class="signup">
+          <form>
+            <label for="chk" aria-hidden="true">Sign up</label>
+            <input type="text" name="txt" placeholder="Username" required="" />
+            <input type="email" name="email" placeholder="Email-Id" required="" />
+            <input type="password" name="pswd" placeholder="Password" required="" />
+            <fieldset class="countries">
+              <div class="select">
+                <select id="country-options" required="">
+                  <option>--country--</option>
+                  <option value="Afghanistan">Afghanistan</option>
+                  <option value="Albania">Albania</option>
+                  <option value="Algeria">Algeria</option>
+                  <option value="American Samoa">American Samoa</option>
+                  <option value="Andorra">Andorra</option>
+                  <option value="Angola">Angola</option>
+                  <option value="Anguilla">Anguilla</option>
+                  <option value="Antigua & Barbuda">Antigua & Barbuda</option>
+                  <option value="Argentina">Argentina</option>
+                </select>
+              </div>
+            </fieldset>
+            <button>Sign up</button>
+          </form>
+        </div>
+
+        <div class="login">
+          <form>
+            <label for="chk" aria-hidden="false">Sign In</label>
+            <input type="text" name="txt" placeholder="Username" required="" />
+            <input type="password" name="pswd" placeholder="Password" required="" />
+            <button>Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </div>
+</body>
+
+</html>

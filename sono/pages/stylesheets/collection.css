@@ -1,0 +1,548 @@
+body {
+  background: url(../../media/backgrounds/production-ID-4210524.gif) repeat fixed 100%;
+  background-size: cover;
+  backdrop-filter: blur(2px);
+  user-select: none;
+}
+/* HEADER */
+header {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 2px 0 0 12px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.6s;
+  z-index: 9999;
+  margin-top: 0;
+}
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+header.sticky {
+  transition: 0.6s;
+  z-index: 4;
+  padding: 5px 100px;
+  background: #fff;
+}
+header .logo {
+  position: relative;
+  font-weight: 700px;
+  color: thistle;
+  text-decoration: none;
+  font-size: 2.6rem;
+  font-family: "Meddon", cursive;
+  /*letter-spacing: 2px;*/
+  transition: 0.6s;
+}
+header ul {
+  background: transparent;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header ul li {
+  position: relative;
+  list-style: none;
+}
+header ul li a {
+  color: #d4af37;
+  font-family: "Graduate", cursive;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.6s;
+}
+header ul li a:hover {
+  text-shadow: 2px 0px 10px whitesmoke;
+}
+header.sticky .logo,
+header.sticky ul li a {
+  z-index: 9999;
+
+  color: #856a13;
+}
+header.sticky ul li a:hover {
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 0px 10px #8c6c02;
+}
+/* HEADER END */
+
+/* SOME ALBUM SUGGESTIONS */
+.one {
+  height: 570px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.slider {
+  height: 100%;
+  width: 100%;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  animation: bgslides 20s ease-in-out infinite;
+}
+
+.slider-p {
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-items: center;
+  align-content: space-between;
+}
+
+@keyframes bgslides {
+  0% {
+    background-image: url(../../media/pics/carousel/adele-poster.png);
+  }
+  25% {
+    background-image: url(../../media/pics/carousel/djcat.png);
+  }
+  50% {
+    background-image: url(../../media/pics/carousel/TSposter2.png);
+  }
+  75% {
+    background-image: url(../../media/pics/carousel/logo3.png);
+  }
+  100% {
+    background-image: url(../../media/pics/carousel/adele-poster.png);
+  }
+}
+
+/* SOME ALBUM SUGGESTIONS END */
+
+/* JUST GENERAL THINGS */
+.container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 1px 0px;
+  grid-auto-flow: row;
+  margin-bottom: 40px;
+  /*    align-items: center; */
+  grid-template-areas: "not-signed signed";
+  /*    /*BOX THINGS*/
+  backdrop-filter: blur(14px) saturate(19%);
+  -webkit-backdrop-filter: blur(14px) saturate(19%);
+  background-color: rgba(230, 230, 230, 0.038);
+  border-radius: 6px;
+  /*BOX THINGS END*/
+}
+.not-signed {
+  display: inline-block;
+  gap: 5px;
+  align-content: space-around;
+  justify-items: center;
+  grid-area: not-signed;
+}
+.label {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  font-size: 3rem;
+  height: 90px;
+  /*GLOW THINGS*/
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 255, 255, 0.6) 0%,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4dffffff', endColorstr='#00ffffff',GradientType=1 );
+  /* END GLOW THINGS */
+}
+.label {
+  -webkit-animation-name: flicker;
+  animation-name: flicker;
+  -webkit-animation-duration: 8s;
+  animation-duration: 8s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+@keyframes flicker {
+  from {
+    opacity: 0.5;
+  }
+  4% {
+    opacity: 0.7;
+  }
+  8% {
+    opacity: 0.45;
+  }
+  12% {
+    opacity: 0.65;
+  }
+  16% {
+    opacity: 0.3;
+  }
+  20% {
+    opacity: 0.5;
+  }
+  24% {
+    opacity: 0.6;
+  }
+  28% {
+    opacity: 0.25;
+  }
+  32% {
+    opacity: 0.3;
+  }
+  36% {
+    opacity: 0.55;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  44% {
+    opacity: 0.6;
+  }
+  48% {
+    opacity: 0.35;
+  }
+  52% {
+    opacity: 0.2;
+  }
+  56% {
+    opacity: 0.7;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  64% {
+    opacity: 0.65;
+  }
+  68% {
+    opacity: 0.35;
+  }
+  72% {
+    opacity: 0.5;
+  }
+  76% {
+    opacity: 0.4;
+  }
+  80% {
+    opacity: 0.65;
+  }
+  84% {
+    opacity: 0.4;
+  }
+  88% {
+    opacity: 0.35;
+  }
+  92% {
+    opacity: 0.6;
+  }
+  96% {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
+.label p {
+  position: relative;
+  font-family: "Sacramento", cursive;
+  font-size: 3.5rem;
+}
+.sections {
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.albums2 {
+  height: 217.5px;
+  width: auto;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5px 5px 5px 5px;
+  display: inline-flex;
+  /*BOX THINGS*/
+  backdrop-filter: blur(500px) saturate(19%);
+  -webkit-backdrop-filter: blur(500px) saturate(19%);
+  background-color: rgba(186, 186, 186, 0);
+  border-radius: 6px;
+  border: 0px solid rgba(255, 255, 255, 0.125);
+  /*BOX THINGS END*/
+}
+.album-cover {
+  filter: none;
+}
+.album-cover img {
+  margin-right: 7px;
+  margin-left: 7px;
+  height: 200px;
+  width: 200px;
+}
+.artist-name {
+  font-size: 1.3rem;
+  font-family: "Asul", sans-serif;
+}
+.album-title {
+  font-family: "Faustina", serif;
+  margin-top: -2px;
+  margin-bottom: 0px;
+  font-size: 2rem;
+}
+.albuminfo {
+  text-align: right;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+.cost {
+  font-family: "Graduate", cursive;
+  font-size: 1.4rem;
+}
+.albums2:hover {
+  transform: translateY(10px);
+  background-color: #8a8a8a3a;
+}
+.albums2:hover .album-title {
+  color: rgba(255, 255, 255, 0.948);
+}
+
+/* JUST GENERAL THINGS END */
+
+/* JUST SIGNED THINGS */
+
+.container2 {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 1px 0px;
+  grid-auto-flow: row;
+  /*    align-items: center; */
+  grid-template-areas: "not-signed signed";
+  /*    /*BOX THINGS*/
+  backdrop-filter: blur(14px) saturate(19%);
+  -webkit-backdrop-filter: blur(14px) saturate(19%);
+  background-color: rgba(230, 230, 230, 0.038);
+  border-radius: 6px;
+  /*BOX THINGS END*/
+}
+
+.signed {
+  display: inline-block;
+  grid-area: signed;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  align-items: center;
+  align-content: space-around;
+  justify-items: center;
+}
+.sections2 {
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  font-size: 3rem;
+  height: 90px;
+  /*GLOW THINGS*/
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 255, 255, 0.6) 0%,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4dffffff', endColorstr='#00ffffff',GradientType=1 );
+  /* END GLOW THINGS */
+}
+.section-title {
+  -webkit-animation-name: flicker;
+  animation-name: flicker;
+  -webkit-animation-duration: 8s;
+  animation-duration: 8s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+.section-title p {
+  position: relative;
+  font-family: "Sacramento", cursive;
+}
+.s-album {
+  font-family: "Belgrano", serif;
+  letter-spacing: -1.5px;
+  font-size: 2.2rem;
+  font-weight: 900px;
+  padding-top: -40px;
+  padding-bottom: 3px;
+}
+.s-artist {
+  font-size: 1.3rem;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-family: "Prata", serif;
+}
+.s-artist span {
+  font-size: 0.9rem;
+}
+.s-cost {
+  font-size: 1.3rem;
+  padding-top: 3px;
+  padding-bottom: 15px;
+  font-family: "Josefin Slab", serif;
+}
+.signed-collection {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+.albums {
+  font-family: "Merriweather", serif;
+  text-align: center;
+  width: max-content;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  /*BOX THINGS*/
+  backdrop-filter: blur(14px) saturate(19%);
+  -webkit-backdrop-filter: blur(14px) saturate(19%);
+  background-color: rgba(230, 230, 230, 0.038);
+  border-radius: 6px;
+  /*BOX THINGS END*/
+}
+
+.albums img {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+
+.albums:hover {
+  background-image: url(../../media/backgrounds/sparkles3.gif);
+  background-size: cover;
+  border-width: 2.5px;
+  border-style: ridge;
+  border-color: rgba(255, 255, 255, 0.468);
+  text-shadow: -3px 1px 7px rgba(188, 188, 188, 0.352);
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+
+.albums:hover.container2 {
+  background: rgba(255, 255, 255, 0);
+}
+.albums:hover.sections2 {
+  background: rgba(255, 255, 255, 0);
+}
+
+/* FOOTER */
+.foot {
+  min-height: 50vh;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+footer {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.42338933864561445) 0%,
+    rgba(207, 181, 59, 0.4037814955083596) 50%,
+    rgba(0, 0, 0, 0.4205882181974352) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+  height: 100px;
+  padding: 20px 50px;
+  flex-direction: column-reverse;
+}
+footer .social-icons,
+footer .menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+footer .social-icons li,
+footer .menu li {
+  list-style: none;
+}
+footer .social-icons li a,
+footer .menu li a {
+  text-decoration: none;
+  font-family: "Oldenburg", cursive;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+footer .menu li a {
+  text-decoration: none;
+  font-family: "Oldenburg", cursive;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+footer .menu li a:hover {
+  color: rgb(248, 219, 101);
+}
+footer .social-icons li a:hover {
+  transform: translateY(-10px) translateX(10px);
+  color: rgb(0, 0, 0);
+}
+/* FOOTER END */

@@ -1,0 +1,410 @@
+body {
+  background: url(../../media/pics/product_rtv/rtvcoverbllurd.png) repeat fixed 100%;
+  overflow: hidden;
+  background-color: #aec6a5;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-size: cover;
+  backdrop-filter: blur(2px);
+  user-select: none;
+}
+/* HEADER */
+header {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 2px 0 0 12px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.6s;
+  z-index: 9999;
+  margin-top: 0;
+}
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+header.sticky {
+  transition: 0.6s;
+  z-index: 4;
+  padding: 5px 100px;
+  background: #fff;
+}
+header .logo {
+  position: relative;
+  font-weight: 700px;
+  color: thistle;
+  text-decoration: none;
+  font-size: 2.6rem;
+  font-family: "Meddon", cursive;
+  transition: 0.6s;
+}
+header ul {
+  background: transparent;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header ul li {
+  position: relative;
+  list-style: none;
+}
+header ul li a {
+  color: #d4af37;
+  font-family: "Graduate", cursive;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.6s;
+}
+header ul li a:hover {
+  text-shadow: 2px 0px 10px whitesmoke;
+}
+header.sticky .logo,
+header.sticky ul li a {
+  color: #856a13;
+}
+header.sticky ul li a:hover {
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 0px 10px #8c6c02;
+}
+/*HEADER END*/
+
+/* PARENT GRID */
+.major-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1.5fr 1.4fr 0.6fr 1.4fr 0.6fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "gallery gallery gallery gallery gallery . ."
+    "gallery gallery gallery gallery gallery price price"
+    "gallery gallery gallery gallery gallery price price"
+    "gallery gallery gallery gallery gallery metacr metacr"
+    "albmnfo albmnfo albmnfo albmnfo albmnfo warn warn"
+    "albmnfo albmnfo albmnfo albmnfo albmnfo . ."
+    "pix pix pix pix pix pix pix";
+}
+
+.gallery {
+  grid-area: gallery;
+  max-height: 700px;
+}
+
+.albmnfo {
+  grid-area: albmnfo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price {
+  grid-area: price;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.warn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  grid-area: warn;
+}
+
+.metacr {
+  grid-area: metacr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pix {
+  background: url(../../media/pics/product_rtv/rtvcover.jpg) fixed no-repeat 100%;
+  background-size: cover;
+  backdrop-filter: blur(44px);
+  grid-area: pix;
+}
+
+/* PARENT GRID END */
+/* CONTENT */
+.extra-container1 {
+  background: url(../../media/pics/product_rtv/rtvcover.jpg) fixed no-repeat 100%;
+  background-size: cover;
+  backdrop-filter: blur(44px);
+}
+.img-gal {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  margin: 0 auto;
+  width: auto;
+}
+
+.img-gal section {
+  display: none;
+  margin-left: 20px;
+  width: auto;
+}
+.img-gal section img {
+  height: 600px;
+  width: 600px;
+}
+/* HIDES RADIO BUTTON CIRCLE */
+.img-gal input {
+  display: none;
+}
+.img-gal label {
+  text-align: center;
+  width: 10%;
+}
+
+.img-gal label:hover {
+  cursor: pointer;
+}
+.img-gal label img {
+  height: 90px;
+  width: 90px;
+}
+.img-gal input:checked + label {
+  padding: 5px;
+  box-shadow: 4px 4px 14px #4d3434;
+}
+.img-gal #pic1:checked ~ #pic-content1 {
+  display: flex;
+}
+.img-gal #pic2:checked ~ #pic-content2 {
+  display: inline-block;
+}
+.img-gal #pic3:checked ~ #pic-content3 {
+  display: inline-block;
+}
+.img-gal #pic4:checked ~ #pic-content4 {
+  display: inline-block;
+}
+
+/* PRICING INFO*/
+.pricing-inner {
+  margin-top: -114px;
+  width: 77%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  padding: 20px 20px 20px 20px;
+  /*BOX THINGS*/
+  backdrop-filter: blur(44px) saturate(19%);
+  -webkit-backdrop-filter: blur(140px) saturate(19%);
+  background-color: rgba(255, 255, 255, 0.27);
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  /*BOX THINGS END*/
+}
+.pricing-inner hr {
+  color: palegoldenrod;
+  width: 90%;
+}
+.art-name {
+  font-family: "Prata", serif;
+  font-size: 1.1rem;
+}
+.alb-name {
+  font-family: "Cairo", sans-serif;
+  font-size: 2rem;
+  margin-top: -9px;
+  margin-bottom: -9px;
+}
+.cost {
+  font-family: "Josefin Slab", serif;
+  font-size: 1.4rem;
+}
+.add-del {
+  font-family: "Share Tech Mono", monospace;
+  font-size: 0.6rem;
+}
+
+.cart {
+  position: relative;
+  top: 0%;
+  left: 0%;
+  font-size: 20px;
+  border: 2px solid rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  font-family: "Comfortaa", cursive;
+  padding: 7px 15px 7px 15px;
+}
+.cart i {
+  font-size: 21px;
+  position: relative;
+  top: 3px;
+}
+.cart:hover {
+  border: 2px solid rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+
+.release {
+  font-family: "Share Tech Mono", monospace;
+}
+.stock {
+  font-family: "Share Tech Mono", monospace;
+}
+.rec-lab {
+  font-family: "Share Tech Mono", monospace;
+  font-size: 900;
+}
+.format {
+  font-family: "Share Tech Mono", monospace;
+}
+.meta-btn {
+  background-color: rgba(238, 232, 170, 0);
+  border: none;
+  font-size: 27px;
+  font-family: "Capriola", sans-serif;
+  border-radius: 30px;
+  color: rgba(172, 42, 28, 0.639);
+  position: absolute;
+  top: 85%;
+  width: 80%;
+}
+.meta-btn a {
+  text-decoration: none;
+  color: inherit;
+}
+.meta-btn:hover {
+  background-color: rgb(188, 113, 112);
+  font-size: 32;
+  color: white;
+}
+
+/* DELIVERY WARNING AND REQUEST */
+.warn-text {
+  margin-top: -124px;
+  width: 77%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Share Tech Mono", monospace;
+  margin-bottom: 20px;
+  text-align: center;
+
+  padding: 20px 20px 20px 20px;
+  /*BOX THINGS*/
+  backdrop-filter: blur(44px) saturate(19%);
+  -webkit-backdrop-filter: blur(140px) saturate(19%);
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  /*BOX THINGS END*/
+}
+.warn-text:hover {
+  color: rgb(252, 223, 0);
+}
+
+/* ALBUM DESC */
+.albmn {
+  width: 88%;
+  font-size: 1.5rem;
+  padding: 20px 20px 20px 20px;
+  margin-top: -283px;
+  z-index: 1;
+  font-family: "Poppins", sans-serif;
+  /*BOX THINGS*/
+  backdrop-filter: blur(44px) saturate(19%);
+  -webkit-backdrop-filter: blur(140px) saturate(19%);
+  background-color: rgba(255, 255, 255, 0.27);
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  /*BOX THINGS END*/
+}
+
+/* CONTENT END */
+
+/*FOOTER*/
+.foot {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+footer {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.42338933864561445) 0%,
+    rgba(207, 181, 59, 0.4037814955083596) 50%,
+    rgba(0, 0, 0, 0.4205882181974352) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+  height: 100px;
+  padding: 20px 50px;
+  flex-direction: column-reverse;
+}
+footer .social-icons,
+footer .menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+footer .social-icons li,
+footer .menu li {
+  list-style: none;
+}
+footer .social-icons li a,
+footer .menu li a {
+  text-decoration: none;
+  font-family: "Oldenburg", cursive;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+footer .menu li a {
+  text-decoration: none;
+  font-family: "Oldenburg", cursive;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+footer .menu li a:hover {
+  color: rgb(248, 219, 101);
+}
+footer .social-icons li a:hover {
+  transform: translateY(-10px);
+  color: rgb(0, 0, 0);
+}
+/*FOOTER END*/
